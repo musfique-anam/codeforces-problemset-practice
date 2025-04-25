@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Musfique/Github/Codeforces-Problems",
-      "program": "d:/Musfique/Github/Codeforces-Problems/build/Debug/outDebug",
+      "cwd": "d:/Musfique/Github/Codeforces-ProblemSet",
+      "program": "d:/Musfique/Github/Codeforces-ProblemSet/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
