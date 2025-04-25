@@ -10,7 +10,7 @@ int main(){
         A=str.size();
         a=str[0];
         b=str[A-1];
-        if(A>=12){
+        if(A>10){
             N=A-2;
             cout<<a<<N<<b<<endl;
         }else{
