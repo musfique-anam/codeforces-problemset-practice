@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main(){
     int Distance,Steps=0,Reminder;
     cin>>Distance;
