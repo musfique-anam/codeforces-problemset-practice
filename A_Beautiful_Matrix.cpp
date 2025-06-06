@@ -21,6 +21,5 @@ int main(){
     }else if(idx<13){
         t=12-idx;
     }
-
     cout<<t<<endl;
 }
