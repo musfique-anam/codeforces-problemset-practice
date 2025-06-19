@@ -15,7 +15,6 @@ int main(){
         }else{
             a=a-1;
         }
-
         s=to_string(a);
     }
     cout<<a<<endl;

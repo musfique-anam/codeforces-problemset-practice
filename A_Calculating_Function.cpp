@@ -13,7 +13,6 @@ int main(){
             v.push_back(b);
         }
     }
-
     int sum=accumulate(v.begin(),v.end(),0);
     cout<<sum<<endl;
 
