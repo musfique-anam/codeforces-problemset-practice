@@ -1,14 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int d,a,b,c,e;
-    cin>>d;
-    a=d%5;
-    if(a == 0 ){
-        b=d/5;
-        cout<<b<<endl;
+    int x;
+    cin>>x;
+    if(x == 1 || x == 2 || x == 3 || x == 4 || x == 5){
+        cout<<"1"<<endl;
     }else{
-        b=d/5;
-        c=d/4;
+        
     }
 }
