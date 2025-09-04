@@ -1,25 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s,s1,s2,s3,len,plus="+";
-    int a,b,c,d,size;
+
+    string s;
+    vector<int> v;
     cin>>s;
-    len=s.length();
-    for(int i=0;i<len;i++){
-        s1=s[i];
-        if(s1 == plus){
-            s.erase(s.begin()+i);
-        }
-    }
-    vector <int> v;
-    size=s.length();
-    for(int i=0;i<size;i++){
-        s2=s[i];
-        d=stoi(s2);
-        v.push_back(d);
+    for(int i=0;i<s.size();i=i+2){
+        string a=s[i];
+        int z=stoi(a);
+        v.push_back(z);
     }
 
-    v.sort(v.begin(),v.end());
-
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
 
 }
