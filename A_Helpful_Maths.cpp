@@ -6,13 +6,19 @@ int main(){
     vector<int> v;
     cin>>s;
     for(int i=0;i<s.size();i=i+2){
-        string a=s[i];
-        int z=stoi(a);
+        string temp(1,s[i]);
+        int z=stoi(temp);
         v.push_back(z);
     }
 
+    sort(v.begin(),v.end());
+
     for(int i=0;i<v.size();i++){
-        cout<<v[i]<<" ";
+        if(i!=0){
+            cout<<'+';
+        }
+        cout<<v[i];
+
     }
 
 }
