@@ -1,11 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int x;
+    int x,a,step,count;
+    count=5;
     cin>>x;
-    if(x == 1 || x == 2 || x == 3 || x == 4 || x == 5){
-        cout<<"1"<<endl;
+    if(x>5){
+        while(count != 0){
+            a=x/count;
+            if(a>0){
+                step=a;
+                x=x-(a*count);
+            }else{
+                step=step+1;
+                break;
+            }
+            count--;
+        }
+        cout<<step<<endl;
     }else{
-        
+        cout<<"1"<<endl;
     }
 }

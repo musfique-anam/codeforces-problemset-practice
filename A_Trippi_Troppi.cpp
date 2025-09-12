@@ -1,50 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main(){
     int t;
-    cin>>t;
     string str;
+    vector<int> v;
+    cin>>t;
     while(t--){
-        cin>>str;
+        getline(cin,str);
+
         for(int i=0;i<str.size();i++){
-            if(str[i] = ' '){
-                
+            if(str[i]==' '){
+                int a=i+1;
+                v.push_back(a);
             }
         }
 
-
-        
-    }
-}
-
-#include<bits/stdc++.h>
-using namespace std;
-
-string trippi(string str){
-    string ans="";
-
-    bool a=true;
-    for(int i=0; i<str.length();i++){
-        if(str[i] == ' '){
-            a=true;
-        }else if(str[i] != ' ' && a==true){
-            ans.push_back(str[i]);
-            a=false;
+        for(int i=0;i<=v.size();i++){
+            int idx=v[i];
+            if(i==0){
+                cout<<str[0];
+            }
+            cout<<str[idx];
         }
-    }
-    return ans;
-}
-
-
-int main(){
-    int t;
-    cin>>t;
-
-    while(t--){
-        string str;
-        cin>>str;
-
-        cout<<trippi(str)<<endl;
     }
 }
