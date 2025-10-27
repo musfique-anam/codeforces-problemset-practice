@@ -1,22 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    string s;
-    int a,n,k,idx;
-    cin>>s;
-    cin>>k;
-    n=s.size();
-    for(int i=0;i<k;i++){
-        idx=n-i;
-        a=stoi(s);
 
-        if(s[idx] == 0){
-            a=a/10;
-        }else{
-            a=a-1;
-        }
-        s=to_string(a);
-    }
-    cout<<a<<endl;
+int main(){
+    int n,k;
+    cin>>n>>k;
+
+    for(int i=0;i<k;i++){
+        int lastD=n%10;
     
+        if(lastD != 0){
+            n=n-1;
+        }else{
+            n=n/10;
+        }
+    }
+
+    cout<<n<<endl;
 }
