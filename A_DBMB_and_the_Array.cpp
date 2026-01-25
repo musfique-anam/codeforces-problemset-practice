@@ -1,19 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int fun(int sum,int s,int x){
-    sum+=x;
-    if(sum == s){
-        return -1;
-    }else{
-        fun(sum,s,x);
-        if(sum > s){
-            return 5;
-        }
-    }
-
-}
-
 int main(){
     int n,s,x,a,sum=0,t;
     vector<int> v;
